@@ -20,7 +20,7 @@
                 v-model="username" 
                 :placeholder="$Amplify.I18n.get(`Enter your ${getUsernameLabel()}`)" 
                 autofocus 
-                v-on:keyup="usernameChanged" 
+                v-on:blur="usernameChanged" 
                 v-bind:data-test="auth.genericAttrs.usernameInput"
             />
         </div>
